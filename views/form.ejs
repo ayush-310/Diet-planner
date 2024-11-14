@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Diet Plan</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header id="top">
+        <div class="wrapper">
+            <h1 class="logo"><a href="#">LifeFit<span></span></a></h1>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="/">Home</a></li>
+                    <li> <a href="/get-diet-plan">Get Diet Plan</a></li>
+                    <!-- <li><a href="#">About</a></li> -->
+                    <!-- <li><a href="#">Pricing</a></li> -->
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <!-- <li><a href="#">Contact</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section >
+
+        <div style=" display: flex; justify-content: center; align-items: center; gap: 50px;">
+            <img style="width: 30%;" src="https://i.pinimg.com/736x/15/01/25/1501253cc914d8f148f65edbb3d9e10f.jpg" alt="">
+
+            <form action="/generate-diet-plan" method="post" class="diet-form">
+                <h1 style="text-align: center; padding: 18px;">Enter Your Details</h1>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+
+                <label for="diet">Diet Preference:</label>
+                <select id="diet" name="diet" required>
+                    <option value="veg">Vegetarian</option>
+                    <option value="non-veg">Non-Vegetarian</option>
+                    <option value="eggs">Includes Eggs</option>
+                    <option value="milk">Includes Milk</option>
+                </select>
+
+                <label for="schedule">Schedule:</label>
+                <input type="text" id="schedule" name="schedule" required placeholder="e.g., Morning and Evening">
+
+                <label for="exercise">How many days can you exercise per week?</label>
+                <select id="exercise" name="exercise" required>
+                    <option value="3">3 Days</option>
+                    <option value="4">4 Days</option>
+                    <option value="5">5 Days</option>
+                </select>
+
+                <button type="submit">Generate Diet Plan</button>
+            </form>
+        </div>
+
+
+
+    </section>
+
+
+    <footer>
+		<div class="wrapper">
+			<div class="footer-left">
+				<p class="copyright">Copyright 2016 <strong>Cardly</strong>. All Rights Reserved</p>
+			</div>
+			<div class="footer-right">
+				<p class="footer-links"><a href="#">Privacy Policy</a> I <a href="#">Terms &amp; Conditions</a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
